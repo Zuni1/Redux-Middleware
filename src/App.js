@@ -3,10 +3,8 @@ import { useSelector } from 'react-redux'
 
 export default function App() {
 
-  // const result = useSelector(state => state.reducer.user)
-  // const errors = useSelector(state => state.reducer.error)
-  
-  const result = useSelector(state => state.users.userReducer)
+  const users = useSelector(state => state.reducer.user)
+  const errors = useSelector(state => state.reducer.error)
 
   const style = {
     container: {
@@ -19,8 +17,8 @@ export default function App() {
   return (
     <div style={style.container}>
       <h1>Fetching User data from 'JSON' Placeholder using axios</h1>
-      <span>{result}</span>
-      {/* <h1>{errors}</h1> */}
+      <span>{users}</span>
+      <h1>{errors}</h1>
     </div>
   )
 }
