@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSelector } from 'react-redux/es/exports'
+import { useSelector } from 'react-redux'
 
 export default function App() {
 
